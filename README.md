@@ -1,5 +1,3 @@
-i am so fu sad!
-but i never mind
-but i never mind \n so what
+#hello
 
-but i never mind \n so what
+this is ubuntu root!
