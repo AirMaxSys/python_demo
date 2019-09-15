@@ -1,4 +1,1 @@
-#hello
-
-this is ubuntu root!
-this is raspberry add
+#Learing python code
