@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 选择排序
+# Choice Sort
 
 def swapTwoNum(a, b):
     return b, a
