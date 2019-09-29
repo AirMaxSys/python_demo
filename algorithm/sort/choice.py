@@ -17,5 +17,5 @@ def choiceSort(a):
 
 a = [15, 60, 22, 100, 81, 90, 27, 102, 2.5e100]
 choiceSort(a)
-print("a[] = ", a)
+print("Choice sort: a[] = ", a)
 
