@@ -5,7 +5,7 @@
 #   <body>
 # except:
 #   <body>
-# excep:
+# except:
 #   <body>
 # ...
 # else:
