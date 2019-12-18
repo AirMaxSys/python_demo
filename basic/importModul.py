@@ -8,6 +8,24 @@
 import random
 from sys import *
 
+
+
+# diference of range(10), range(0, 10), range(0, 10, 1)
+for i in range(10):
+    print(i, end = " ")
+print()
+
+print("---------cut line---------")
+for i in range(0, 10):
+    print(i, end = " ")
+print()
+
+print("---------cut line---------")
+for i in range(0, 10, 1):
+    print(i, end = " ")
+print()
+
+
 for i in range(5):
     print(random.randint(1, 100), end = " ")
 print()
