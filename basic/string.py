@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 # 字符串是用双引号或单引号括起来的一个或多个字符
 # 字符串可以保存在变量中也可以单独存在
 # 可以用type()函数测试一个字符串的类型
@@ -35,6 +36,17 @@ del str
 print("str(123) = " + str(123))
 print("str(2.5e-4) = " + str(2.5e-4))
 
+# 注意python中的字符串是不可变的数据类型
+S1 = "damn"
+# error
+# S1[0] = 'c'
+
+# 修改字符串只能用分片的技巧
+S2 = 'The ' + S1[:]
+del S1
+S1 = S2
+print(S1)
+
 # e.g:输入一个月份数字，返回对应月份名称的缩写
 # NOTE:用户输入是字符串,作为索引要转换为数字类型
 # 方法一：list
@@ -43,7 +55,7 @@ print("str(2.5e-4) = " + str(2.5e-4))
 # print(mon[int(index) - 1])
 
 # 方法二: string
-mon = "JanFebMarAprMayJunJulAugSepOctNovDec"
-n = input("请输入月份数(1~12):")
-pos = (int(n) - 1) * 3
-print("月份英文缩写:" + mon[pos:pos+3]) 
+# mon = "JanFebMarAprMayJunJulAugSepOctNovDec"
+# n = input("请输入月份数(1~12):")
+# pos = (int(n) - 1) * 3
+# print("月份英文缩写:" + mon[pos:pos+3]) 
