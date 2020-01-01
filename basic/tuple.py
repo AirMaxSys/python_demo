@@ -21,3 +21,11 @@ print(t3[2][1])
 print(t3[1:])
 print(t3 + t2)
 print(t3*2)
+
+
+# 列表和元组之间的转换函数 list() & tuple
+print("Pet contain: ")
+print(tuple(['cat', 'pig', 'parrot']))
+
+print("Pet contain: ")
+print(list( ('cat', 'pig', 'parrot') ))
