@@ -33,11 +33,27 @@ print("hello" in a)
 pet = ['cat', 'pig', 'dog', 'parrot']
 if 'parrot' in pet:
     print('Parrot is a kind of pet.')
-else if 'tiger' not in pet:
+elif 'tiger' not in pet:
     print('Tiger is not a kind of pet.')
 
 # 多重赋值技巧(注意：等号左边的变量数目必须要和列表元素数目一致)
 num = [0x10, 0x20, 0x30, 0x40, 0x50]
 num1, num2, num3, num4, num5 = num
 print(num1, num2, num3, num4, num5)
+
+
+# NOTE: 列表的赋值是按址传递 
+m_list = [1, 2, 3]
+m_list_r = m_list
+
+def show_list(m_list):
+    for i in range(len(m_list)):
+        print(m_list[i], end=' ')
+
+    print()
+    return 0
+
+show_list(m_list)
+m_list_r[0] = 'hello'
+show_list(m_list)
 
