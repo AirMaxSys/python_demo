@@ -32,3 +32,21 @@ for i in wether_dict.items():
 print(wether_dict.items())
 w_tuple = tuple(wether_dict.items())
 print(w_tuple)
+
+
+# 字典中的get()和setdefault()方法
+# 检测键是否存在于字典当中，存在返回键对应的值，不存在返回传递给get函数的第二个参数
+w_length = {
+    "hello" : 5,
+    "world" : 5,
+    "all"   : 3,
+    "communicate"   : 11,
+    "target"        : 6    
+}
+
+if w_length.get("shrimp", 0) == 0:
+    print("\"shrimp\" is not in dict!")
+
+if(w_length.get("hello", 0) == w_length["hello"]):
+    print("\"hello\" is in dict!")
+
