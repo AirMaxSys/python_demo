@@ -33,6 +33,7 @@ print(wether_dict.items())
 w_tuple = tuple(wether_dict.items())
 print(w_tuple)
 
+print('--------------------------------------------------')
 
 # 字典中的get()和setdefault()方法
 # 检测键是否存在于字典当中，存在返回键对应的值，不存在返回传递给get函数的第二个参数
@@ -50,3 +51,20 @@ if w_length.get("shrimp", 0) == 0:
 if(w_length.get("hello", 0) == w_length["hello"]):
     print("\"hello\" is in dict!")
 
+print('--------------------------------------------------')
+
+# setdefault()方法
+# 用于检测键是否在字典中，若在返回字典中的值，若不则将传入setdefault()方法的第二个参数
+# 用于第一个参数的值并且添加到列表中
+broad_info = {
+    "lcd" : True, 
+    "multiKeys" : False,
+    "wi-fi" : True,
+    "debuger" : True,
+    "leds" : True,
+    "co2 sensor" : False            
+}
+
+print(broad_info.setdefault("lcd", False) )
+print(broad_info.setdefault("exterl flash", True))
+print(broad_info)
