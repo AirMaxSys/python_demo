@@ -1,0 +1,6 @@
+{
+  "python.venvPath": ".\\venv",
+  "python.pythonPath": "venv\\Scripts\\python.exe",
+  //"terminal.integrated.env.windows" : {"PATH" : "D:\\sqlite3;D:\\python\\python37;D:\\python\\python37\\Scripts"},
+  // "terminal.integrated.shellArgs.windows": ["/k", "env.bat"]
+}
