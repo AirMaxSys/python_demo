@@ -1,0 +1,2 @@
+echo hhhhh
+echo %path%
