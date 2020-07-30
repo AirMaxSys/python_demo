@@ -59,3 +59,24 @@ print(S1)
 # n = input("请输入月份数(1~12):")
 # pos = (int(n) - 1) * 3
 # print("月份英文缩写:" + mon[pos:pos+3]) 
+
+# python与str有关的内置方法
+mstr1 = 'hello, world'
+print(mstr1.capitalize()) #Hello, world
+print(mstr1.title()) #Hello, World
+print(mstr1.upper()) #HELLO, WORLD
+print(mstr1.startwith('He')) #False
+print(mstr1.startwith('HEL')) #True
+
+mstr2 = 'abcd123'
+print(mstr2.isdigit()) #False
+print(mstr2.isalpha()) #False
+print(mstr2.isalnum()) #True
+
+# 判断字符串是否在一个字符串中
+mstr3 = 'today is good'
+msubstr = 'is'
+if msubstr in mstr3:
+    print(f'{msubstr} is a substring of {mstr3}')
+
+
