@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# python格式话输出
+# python format output
 def main():
     a, b = 10, 20
     print('%d * %d = %d' % (a, b, (a * b)))
