@@ -1,18 +1,35 @@
-#!/bin/python3
+#!/usr/bin/python
 
-# 字典(dict)是可以是不同类型键-值对的的集合
-# 字典以花括号声明(元组->括号     列表->中括号)
+# python dictionary basic
 
-m_dict = {'bill' : 18, 'old dog' : 24, 'chicken' : 23, 'force gun' : 25}
-print(m_dict)
+def main():
+	# create dict
+	m_dict = {'bill' : 18, 'old dog' : 24, 'chicken' : 23, 'force gun' : 25}
+	print(m_dict)
 
-print('bill' in m_dict)
+	print('bill' in m_dict)
 
-# 字典以键(索引)来访问
-print(m_dict['chicken'])
+	# 字典以键(索引)来访问
+	print(m_dict['chicken'])
 
-m_dict['old dog'] = 30
-print(m_dict['old dog'])
+	m_dict['old dog'] = 30
+	print(m_dict['old dog'])
 
-m_dict['hh'] = 'hello he'
-print(m_dict)
+	m_dict['hh'] = 'hello he'
+	print(m_dict)
+
+	# create dict by constructor
+	dict2 = dict(one=1, two=2, three=3)
+	print(f'dict2:{dict2}')
+
+	# create dict by comprehensions
+	dict3 = {num: num ** 2 for num in range(1, 10)}
+	print(f'dict3:{dict3}')
+
+	# traverse dict by key
+	print('Traverse dict2:')
+	for key in dict2:
+		print(f'{key}:{dict2[key]}')
+
+if __name__ == "__main__":
+	main()
