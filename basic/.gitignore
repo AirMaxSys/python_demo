@@ -1,5 +1,7 @@
-# python test __pycache__
+# python
 __pycache__
 
 # test file
 *.txt
+
+.vscode
